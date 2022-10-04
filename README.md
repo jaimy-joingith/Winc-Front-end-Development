@@ -1,2 +1,1 @@
-# Winc-Front-end-Development
-Winc Front-end Development
+Student @ Winc Academy. Employee @ ASz ziekenhuis. Entrepreneur @ Sleeuwits ink, undo and mhp.
