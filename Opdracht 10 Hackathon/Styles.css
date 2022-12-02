@@ -1,0 +1,243 @@
+/* TEKST OPMAAK */
+
+h1 {
+   font-family: "Sofia", sans-serif; 
+   font-weight: 50;
+   font-size: 5rem;
+   margin: 0;
+   line-height: 1;
+   color:rgb(207, 163, 17);
+}
+
+h2 {
+   font-family: "Sofia", sans-serif;
+   font-weight: 65;
+   color: white;
+   padding-top: 5px;
+}
+
+h3 {
+   font-family: "Sofia", sans-serif;
+   font-weight: 900;
+   color: darkgreen;
+}
+
+.volg {
+   padding-top: 20px;
+}
+
+.subtitel-logo {
+   line-height: 4;
+   margin-top: 0;
+   font-size: 12px
+}
+
+
+body {
+   font-family: "Dosis";
+   text-align: center;
+}
+
+.main-nav {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+   background-color: lightgray
+}
+
+nav li {
+   display: inline;
+   margin: 15px;
+}
+
+.link-nav {
+   color: grey;
+   text-decoration: none;
+}
+
+.link-nav:hover {
+   color: darkgreen;
+   text-transform: uppercase;
+}
+
+.gerecht {
+   text-align: center;
+   padding-top: 10px;
+   font-weight: bold;
+}
+
+.toelichting-gerecht {
+   font-size: 10px;
+}
+
+.welkom-tekst {
+    padding: 20px 30px;
+
+}
+
+/* LAY-OUT */
+
+
+.fotobanner {
+   height: 100%;
+   width: 100%;
+}
+
+.container {
+   width: 100%;
+   text-align: center;
+}
+
+.container-gelebalk { 
+   background-color: rgb(207, 163, 17);
+   height: 50px;
+   width: 100%;
+   border-radius: 10px;
+}
+
+.welkomfoto {
+   width: 350px;
+   height: 100%;
+   border-radius: 100%;
+   margin-bottom: 20px;
+}
+
+.broodjefoto1 {
+   width: 350px;
+   height: 100%;
+   border-radius: 25%;
+   padding-top: 25px;
+   padding-bottom: 5px;
+}
+
+footer {
+   background-color: rgb(207, 163, 17);
+   color:darkslategray;
+   margin-top: 25px;
+   padding: 10px 0;
+   line-height: 0.5;
+}
+
+/* FOTO PROBEERSEL */
+
+.broodjesvdmaand {
+   position: relative;
+   width: 80%;
+   padding-left: 50px;
+   padding-right: 50px;
+ }
+
+.broodjesvdmaand:hover .broodjefoto1 {
+   opacity: 0.5;
+}
+ 
+.broodjesvdmaand:hover .middel {
+   opacity: 1;
+}
+
+.broodjefoto1 {
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+   transition: .5s ease;
+   backface-visibility: hidden;
+ }
+ 
+ .middel {
+   transition: .5s ease;
+   opacity: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%)
+ }
+ 
+ .tekstmiddel {
+   background-color:darkgreen;
+   color: white;
+   font-size: 16px;
+   padding: 16px 32px;
+}
+
+/* FORM */
+
+.form-input {
+   border: none;
+   border-bottom: 1px solid grey;
+}
+
+/* SOCIAL MEDIA */
+
+.fa {
+   padding: 20px;
+   margin: 20px;
+   font-size: 30px;
+   width: 30px;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 100%;
+ }
+
+.fa:hover {
+     opacity: 0.5;
+ }
+
+.fa-facebook {
+   background:#3B5998;
+   color: white;
+}
+
+.fa-instagram {
+   background: rgb(209, 41, 69);
+   color: white;
+}
+
+.fa-youtube {
+   background: red;
+   color: white;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+   .main-nav {
+       justify-content: center;
+   }
+
+   .fotobanner{
+       width: 100%;
+       height: 500px;
+       object-fit: cover;
+   }
+
+   .broodjesfoto1 {
+       height: 200px;
+       width: 200px;
+   }
+
+   .container-contact,
+   .container-about,
+   .container-welkom,
+   .container-broodje {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 2fr;
+       grid-gap: 20px;
+       margin: 20px 200px 0 200px;
+   }
+
+   .container-home {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 2fr;
+       padding: 20px 200px;
+       margin: 20px 200px 0 200px;
+   }
+
+  
+
+   
+}
